@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 /**
 *main - Entry point
 *Return: Always 0 (Success)
@@ -9,6 +10,7 @@ char c;
 for (c = 'a'; c <= 'z'; c++)
 {
 putchar(c);
+}
 putchar('\n');
 return (0);
 }
