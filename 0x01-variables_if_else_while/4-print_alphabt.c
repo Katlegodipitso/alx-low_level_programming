@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 /**
 *main - Entry point
 *Return: Always 0 (Success)
@@ -11,6 +12,7 @@ for (c = 'a'; c <= 'z'; c++)
 if (c != 'e' && c != 'q')
 {
 putchar(c);
+}
 }
 putchar('\n');
 return (0);
