@@ -1,19 +1,13 @@
-#include "main.h"
+#include <main.h>
+#include <unistd.h>
 
 /**
-*main - Print "_putchar"
-*Return: Always 0 (Success)
+*_putchar - writes the character c to stdout
+*@c: The character to print
+*Return: On success 1.
 */
 
-int main(void)
+int _putchar(char c)
 {
-int i = 0;
-char output[] = "_putchar";
-while (i < 9)
-{
-_putchar(output[i]);
-i++;
-}
-_putchar('\n');
-return (0);
+return (write(1, &c, 1));
 }
