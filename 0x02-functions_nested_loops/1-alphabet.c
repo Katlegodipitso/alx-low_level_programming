@@ -1,19 +1,15 @@
 #include "main.h"
 
 /**
-*print_alphabet - Entry point
-*Description: a function that prints the alphabet in lowercase
-*followed by a new line
-*Return 0
+*print_alphabet - Prints alphabets 'a - z'
 */
 
 void print_alphabet(void)
 {
-char letter = 'a';
-while (letter <= 'z')
+char c;
+for (c = 'a'; c <= 'z'; c++)
 {
-_putchar(letter);
-letter++;
+_putchar(c);
 }
 _putchar('\n');
 }
