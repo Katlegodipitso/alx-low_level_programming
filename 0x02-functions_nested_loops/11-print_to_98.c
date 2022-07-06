@@ -1,30 +1,27 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
-*print_to_98 - prints numbers to 98
-*@n: starting integer
-*Description: prints all natural number from n - 98
-Return: void
+*print_to_98 - Prints numbers from n to 98.
+*@n: Theinput number.
+*Return: no return.
 */
 
 void print_to_98(int n)
 {
-if (n < 98)
+if (n > 98)
 {
-while (n < 98)
-{
-printf("%d, ", n);
-n++;
-}
-}
-else if (n > 98)
-{
-while (n > 98)
+for (; n > 98; n--)
 {
 printf("%d, ", n);
-n--;
 }
 }
-printf("98\n");
+else if (n < 98)
+{
+for (; n < 98; n++)
+{
+printf("%d, ", n);
+}
+}
+printf("%d\n", n);
 }
