@@ -1,9 +1,25 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
-#include <stdio.h>
+/**
+* largest_number - returns the largest of 3 numbers
+* @a: first int
+* @b: second int
+* @c: third int
+* Return: largest number
+*/
 
-void positive_or_negative(int i);
-int largest_number(int a, int b, int c);
+int largest_number(int a, int b, int c)
+{
+int largest = b;
 
-#endif /* MAIN_H */
+if (a > b)
+{
+largest = a;
+}
+else if (c > b)
+{
+largest = c;
+}
+
+return (largest);
+}
