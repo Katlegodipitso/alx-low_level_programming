@@ -1,28 +1,28 @@
 #include "main.h"
 
 /**
-* print_diagonal - check for a digit
-* @n : number of \\ to be printed
-* Return:void
+* print_diagonal - prints a diagonal
+* @n:parameter
+* Return:returns nothing
 */
 
 void print_diagonal(int n)
 {
-int i = 0, ii;
-
-while (i < n && n > 0)
+int len, space;
+if (n > 0)
 {
-ii = 0;
-while (ii < i)
+for (len = 0; len < n; len++)
+{
+for (space = 0; space < len; space++)
 {
 _putchar(' ');
-ii++;
-}
 _putchar('\\');
-_putchar('\n');
-i++;
-}
-if (i == 0)
+
+if (len == (n - 1))
 {
+continue;
+_putchar('\n');
+}
+}
 _putchar('\n');
 }
