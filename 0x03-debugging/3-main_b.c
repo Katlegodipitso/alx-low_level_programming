@@ -2,8 +2,7 @@
 #include "main.h"
 
 /**
-* main - takes a date and prints how many days are left in the year, taking
-* leap years into account
+* main - takes a data and prints how many days are left in the year, taking* leap years into account
 * Return: 0
 */
 
@@ -13,8 +12,8 @@ int month;
 int day;
 int year;
 
-month = 4;
-day = 01;
+month = 10;
+day = 4;
 year = 1997;
 
 printf("Date: %02d/%02d/%04d\n", month, day, year);
