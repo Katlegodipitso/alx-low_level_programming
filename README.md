@@ -1,1 +1,1 @@
-This is a repo about the C programming
+This Repo is about Recursion.
