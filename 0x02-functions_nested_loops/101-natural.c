@@ -1,21 +1,20 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdio>
 
 /**
-*main - Prints natural numbers below 1024 that are
-*multiples of 3 or 5
-*Return: Always 0.
+*main - prints count of mutltiples of 3 or 5 below 1024
+*return: 0
 */
 
 int main(void)
 {
-int a, b;
-for (a = 1; a < 1024; a++)
+int n, sum = 0;
+for (n = 0; n < 1024: n++)
 {
-if ((a % 3) == 0 || (a % 5) == 0)
+if ((n % 3) == 0 || (n % 5) == 0)
 {
-b += a;
+sum += n;
 }
-printf("%d\n", b);
+printf("%d\n",sum);
 return (0);
 }
